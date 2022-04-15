@@ -1,0 +1,94 @@
+{
+    "name": "Skyzo Music",
+    "description": "Music allow you to stream music trought the telegram voice chat feature.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/Ahmedtyi/Ahtyussser_xxx",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "كود جلسه",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "ايدي المالك",
+            "required": true
+       },
+         "OWNER_USERNAME": {
+            "description": "يوزر المالك من غير @",
+            "required": true
+        },
+         "BOT_IMG": {
+            "description": "صوره استارت",
+            "required": true
+        },
+         "MOT_IMG": {
+            "description": "صوره المالك",
+            "required": true
+       },
+         "OT_IMG": {
+            "description": "صوره السورس",
+            "value": "https://telegra.ph/file/9c0a58152566d14393413.jpg",
+            "required": true
+        },
+        "ASS_ID": {
+            "description": "ايدي حساب المساعد",
+            "required": true
+        },
+        "LOG_GROUP_ID": {
+            "description": "ايدي الروم",
+            "required": true,
+            "value": "-1001732286742"
+        },
+        "API_ID": {
+            "description": "الايبى ايدي",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "الايبى هاش",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "جميع ايدي المطورين",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "والله ما انا عرفها بس سيبها كدا !",
+            "required": true,
+            "value": "540000"
+        },
+        "BOT_TOKEN": {
+            "description": "توكن البوت",
+            "required": false
+        },
+        "MONGO_DB_URI": {
+            "description": "قاعدة بيانات",
+            "required": false
+        },
+        "CHANNEL": {
+            "description": "قناه السوس @",
+            "required": true,
+            "value": "SOU_SCORPION_RCE"
+        },
+        "HANNEL": {
+            "description": "قناه المالك من غير @",
+            "required": true
+        },
+        "GROUP": {
+            "description": "جروب الدعم @",
+            "required": true,
+            "value": "ZAIDSUPPORT"
+        },
+        "ROUP": {
+            "description": "بار المالك من غير @",
+            "required": true
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
